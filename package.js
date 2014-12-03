@@ -1,7 +1,8 @@
 Package.describe({
-  summary: "bootstrap data",
-  version: "3.3.0_1",
-  git: "https://github.com/Nemo64/meteor-bootstrap-data"
+  name: 'bozhao:bootstrap-material-design-data',
+  summary: "bootstrap data current version 3.3.1 and 0.2.0",
+  version: "3.3.1",
+  git: "https://github.com/yubozhao/meteor-bootstrap-data"
 });
 
 Package.onUse(function(api) {
@@ -94,11 +95,49 @@ Package.onUse(function(api) {
     'bootstrap/js/tab.js',
     'bootstrap/js/tooltip.js',
     'bootstrap/js/transition.js',
+
+    'bootstrap-material-design/less/_alerts.less',
+    'bootstrap-material-design/less/_buttons.less',
+    'bootstrap-material-design/less/_cards.less',
+    'bootstrap-material-design/less/_checkboxes.less',
+    'bootstrap-material-design/less/_dialogs.less',
+    'bootstrap-material-design/less/_icons-material-design.less',
+    'bootstrap-material-design/less/_icons.less',
+    'bootstrap-material-design/less/_inputs.less',
+    'bootstrap-material-design/less/_labels.less',
+    'bootstrap-material-design/less/_lists.less',
+    'bootstrap-material-design/less/_mixins.less',
+    'bootstrap-material-design/less/_navbar.less',
+    'bootstrap-material-design/less/_panels.less',
+    'bootstrap-material-design/less/_plugin-dropdownjs.less',
+    'bootstrap-material-design/less/_plugin-nouislider.less',
+    'bootstrap-material-design/less/_plugin-selectize.less',
+    'bootstrap-material-design/less/_plugin-snackbarjs.less',
+    'bootstrap-material-design/less/_popups.less',
+    'bootstrap-material-design/less/_progress.less',
+    'bootstrap-material-design/less/_radios.less',
+    'bootstrap-material-design/less/_shadows.less',
+    'bootstrap-material-design/less/_tabs.less',
+    'bootstrap-material-design/less/_togglebutton.less',
+    'bootstrap-material-design/less/_variables.less',
+    'bootstrap-material-design/less/_welljumbo.less',
+    'bootstrap-material-design/less/material-wfont.less',
+    'bootstrap-material-design/less/material.less',
+    'bootstrap-material-design/less/ripples.less',
+
+    'bootstrap-material-design/scripts/material.js',
+    'bootstrap-material-design/scripts/ripples.js',
   ], 'server', {isAsset:true});
+
   api.add_files([
     'bootstrap/fonts/glyphicons-halflings-regular.eot',
     'bootstrap/fonts/glyphicons-halflings-regular.svg',
     'bootstrap/fonts/glyphicons-halflings-regular.ttf',
     'bootstrap/fonts/glyphicons-halflings-regular.woff',
+
+    'bootstrap-material-design/fonts/Material-Design-Icons.eot',
+    'bootstrap-material-design/fonts/Material-Design-Icons.svg',
+    'bootstrap-material-design/fonts/Material-Design-Icons.ttf',
+    'bootstrap-material-design/fonts/Material-Design-Icons.woff'
   ], 'client');
 });
